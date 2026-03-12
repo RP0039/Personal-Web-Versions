@@ -1,0 +1,50 @@
+
+/*  ----  MODO OSCURO  ----  */
+#toggle {
+    display:none;
+}
+#label_toggle {
+    font-size:1.5em;
+    color: rgb(80, 33, 190);
+    cursor:pointer;
+}
+.dark {
+    background-color:#000;
+    color:white;
+}
+body {
+    transition:all 0.3s ease-in-out;
+}
+
+@media (min-width:469px) {
+    #label_toggle {
+        position:absolute;
+        top:15px;
+        right:10px;
+        font-size:2em
+    }
+}
+
+/*  ----  BOTONES DE NAVEGACIÓN "EFECTO" ----  */
+.menu-link:hover {
+  color:rgb(12, 118, 150);
+  transition: color .5s ease;
+}
+.xtras:hover {
+    border-color:rgb(2, 200, 150);
+    transition: all .7s ease;
+    scale:1.1;
+    box-shadow: 3px 6px 0 rgb(55,34,209);
+    font-weight: bold;
+}
+.logo:hover {
+    color:rgb(2, 200, 150);
+    transition: color .7s ease;
+
+}
+
+.home-container .img {
+    padding: 5px 7px;
+    border:2px dashed;
+}
+

@@ -1,0 +1,6 @@
+debo poner un boton de enter para moviles 
+cuando termina el texto q aparezca de forma un poco lenta 
+y modificar los tamaños de las ventanas
+
+
+gracias por la guia :o

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: Digital-7;
+    src: url(./Font/digital-7.ttf);
+}
+/*=======================flex=========================*/
+body {
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    min-height: 100vh;
+}
+/*=======================fondo========================*/
+.bg {
+  background:repeat center / cover url(./Img/rocks.png);
+  position: fixed;
+  inset: 0;
+  filter: contrast(2);
+  transform: scale(1.05);
+  z-index: -10;
+}
+/*======================computadora====================*/
+.computer-box {
+    position: relative;
+}
+.computer {
+    height:650px;
+    width:auto;
+}
+.screen {
+  background: black;
+  height: 250px;
+  width: 300px;
+  top: 77px;
+  left: 150px;
+  position: absolute;
+  z-index: -9;
+
+}
+.text-box {    
+    position:absolute;
+    top:90px; 
+    left:173px;
+}
+.text {
+    font-size:13.45px;
+    color:rgb(206, 206, 206);
+    line-height: 1.2;
+}
+#terminal-text {
+    background: none;
+    box-shadow: none;
+    padding:    0px ;
+}
+/*===========================Message==========================*/
+.gif-window {
+    position:fixed;
+    right:40px;
+    bottom:100px;
+}
+
+/*=============================================================*/
+#cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+.text.hide {
+  opacity: 0;
+}
+
+.loadicon {
+  display:grid;
+  grid-template-rows: 40px;
+  grid-template-columns: 40px auto;
+  gap:1em;
+}
+#screen-icon {
+  display: none;
+  width:40px;
+  height:auto;
+}
+#text-icon {
+  display:none;
+  font-size:14px;
+  height:13px;
+  LINE-HEIGHT:1;
+  color: rgb(206, 206, 206);
+  margin:auto 0;
+}
+.screen{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}

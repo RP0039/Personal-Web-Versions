@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family:digital;
+    src: url(./Font/Digital.otf);
+}
+
+body {
+    background:repeat url(./gif/cizne.gif);
+    overflow-y: hidden;
+}
+/*común*/
+
+/*cuaderno*/
+img {
+    height:750px;
+    width:50vw;
+}
+.text {
+    position: absolute;
+    top:45px;
+    left:110px;
+    font-family: digital;
+    font-size:50px;
+    text-wrap: NOWRAP;
+    display:inline-block;
+    line-height: 1.2;
+}
+.dream {
+    position: relative;
+    background:no-repeat center / cover url(./Img/papel2.png);
+    height:120px;
+    width:500px;
+    justify-self: start;
+    
+}
+.cuaderno {
+    position: relative;
+    display:flex;
+    justify-content:center;
+    flex-flow:column;
+    margin-top:30px;
+    height:auto;
+    border:10px outset burlywood;
+    background:url(./Img/cartón.jpg);
+}
+.pin {
+    position:absolute;
+    top:-10PX;
+    LEFT:130PX;
+    height: 70px;
+    width:60px;
+}
+
+.title-box {
+    position: absolute;
+    top:30px;
+    left:20px;
+}
+.note {
+    position:absolute;
+    right:40px;
+    bottom:40px;
+}
+#yume {
+    position: fixed;
+    bottom: 10px;
+    right:30px;
+    height:120px;
+    width:120px;
+}
+.box {
+    border-width: 10px;
+    border-style:solid;
+    border-image: url(./gif/corazon.gif) 9 fill round;
+    padding:10px;
+    margin:210px auto 0;
+    max-width:400px;
+}
+.menu {
+    position:absolute;
+    bottom:15px;
+    left:30px;
+}
+.recibo {
+    margin-top:10px;
+    height:300px;
+    width:auto;
+}
+.pronto{
+    top:55px;
+    left:85px;
+    position: absolute;
+    max-width:150px;
+}
+h1 {
+    font-size:17px;
+}

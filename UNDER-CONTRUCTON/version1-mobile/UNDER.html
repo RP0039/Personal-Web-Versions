@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UNDER CONSTRUCTION</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="UNDER.css" />
+  <link rel="stylesheet" href="https://unpkg.com/98.css" />
+  <link rel="icon" href="./Img/computadora2.png" />
+</head>
+<body>
+
+<div class="bg"></div>
+
+    <div class="computer-box">
+        <img src="./Img/computadora3.png" class="computer">
+        <div class="screen">
+          <div class="loadicon">
+           <img src="./gif/Loading-icon.gif" alt="" id="screen-icon">
+           <div id="text-icon">LOADING...</div>
+          </div>
+        </div>
+        
+        <div class="text-box">
+            <div class="text">
+              <pre id="terminal-text"></pre><span id="cursor">█</span>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="gif-window">
+    <div class="win7">
+<div class="window active" style="--w7-w-bg: #805ba5">
+  <div class="title-bar">
+    <div class="title-bar-text">RP0039 MESSAGE</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body has-space">
+    <article role="tabpanel" id="music">
+      <fieldset>
+        <legend style="font-weight:bold;">What are you waiting for?</legend>
+        <div class="stiker">
+          <img src="./gif/edward-saludo.gif" alt="none" class="edw" style="max-width: 250px; ">
+        </div>
+      </fieldset>
+    </article>
+  </div>
+</div>
+  </div>
+</div> 
+
+
+<script>
+const text = `
+RP0039.ORG [VERSION 10.0.8045.64]
+USER = UNKNOWN
+ACCESS DENIED >> ERROR 102
+REBOOTING SYSTEMS
+
+..
+...
+
+REDIRECTING YOU ..
+PRESS ENTER TO CONTINUE
+<C: ./RP0039.N.../INDEX.html>`;
+
+const speed = 35;
+let i = 0;
+let finished = false;
+
+const terminal = document.getElementById("terminal-text");
+const cursor = document.getElementById("cursor");
+const screen = document.querySelector(".screen");
+const icon = document.getElementById("text-icon");
+const icon1 = document.getElementById("screen-icon");
+
+cursor.style.opacity = 0;
+
+function typeWriter() {
+  if (i < text.length) {
+    terminal.textContent += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  } else {
+    finished = true;
+    cursor.style.opacity = 1;
+  }
+}
+
+typeWriter();
+
+document.addEventListener("keydown", (e) => {
+  if (finished && e.key === "Enter") {
+    finished = false;
+
+    cursor.style.opacity = 0;
+    terminal.textContent += "\n\nLOADING...";
+
+    document.querySelector(".text").classList.add("hide");
+
+    setTimeout(() => {
+      icon.style.display = "block";
+    }, 400);
+    setTimeout(() => {
+      icon1.style.display = "block";
+    }, 400);
+
+    setTimeout(() => {
+      window.location.href = "https://rp0039.neocities.org/";
+    }, 2500);
+  }
+});
+</script>
+</body>
