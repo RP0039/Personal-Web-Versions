@@ -1,0 +1,95 @@
+/*Fuentes*/
+@font-face {
+    font-family: Venicce;
+    src: url("Font/VeniceClassic.ttf");
+}
+/*=====================Fondo============================*/
+body {
+    background: repeat-Y center / cover url(./gif/JgYWkyu.gif);
+    display: flex;
+    justify-content: center;
+}
+/*===================GENERAL==========================*/
+.window {
+     margin-top: 130px; 
+     width: 450px;
+}
+.box {
+    border: black 4px inset;
+    background:rgb(135, 173, 173);
+    margin-top: 10PX;
+
+    padding: 10px;
+}
+/*===================Titlebox=========================*/
+#Title-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:0;
+}
+#yumecompu {
+    width: 90px;
+}
+span {
+     font-family: Venicce; 
+     font-size: 70px;
+}
+/*===================MainBox============================*/
+.main {
+    margin-top: 10px;
+    padding:5px;
+
+    display:flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+}
+/*=======================Navigation=========================*/
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-flow:column;
+}
+.menu-link {
+  font-size: 19px;
+  font-family:venicce;
+  display: inline-block;
+  padding: 8px 16px;
+  color: black;
+  background:#00ff88;
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: 
+    transform 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
+}
+
+.menu-link:hover {
+  transform: translateX(4px);   /* movimiento leve */
+  border-color: brown;
+  color: #ffffff;
+}
+/*=======================Computer===========================*/
+.computer { 
+    position: relative; 
+    height:240px;
+    width:200px;
+}
+#pcimg {
+    position:absolute;
+    z-index:10;
+    height:240px;
+    width:200px;
+}
+#screen {
+  position: absolute;
+  top: 30px;
+  left: 48px;
+  width: 88px;
+  height: 89px;
+  z-index:1;
+
+  transition: opacity 0.2s ease;
+}
