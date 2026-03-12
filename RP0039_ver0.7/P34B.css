@@ -1,0 +1,57 @@
+/*Fuentes*/
+@font-face {
+    font-family: Saber;
+    src: url("Font/Sabor Digital.ttf");
+}
+@font-face {
+    font-family: Venicce;
+    src: url("Font/VeniceClassic.ttf");
+}
+/*Fondo*/
+body {
+    background: url("Img/portonAbierto2.jpg");
+    background-attachment:  fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+}
+/*ContenedoresI*/
+.box {
+    border: black 4px inset;
+    background:#fff;
+    margin-top: 10PX;
+
+    padding: 10px;
+    height: 100%;
+}
+/*Titlebox*/
+#Title-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*MainBox*/
+#mainBox {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.main {
+    height: auto;
+    margin-top: 10px;
+    padding:5px;
+
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 0.5em;
+}
+/*botones*/
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-size: 20px;
+}

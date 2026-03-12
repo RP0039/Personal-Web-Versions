@@ -1,0 +1,71 @@
+
+.contenedor {
+  overflow: hidden;
+  position: fixed;
+  top: 20px;
+  background-color: black;
+  border: groove 8px yellow;
+  height: 30px;
+  width: 300px;
+  margin-left: 50px;
+}
+
+.texto {
+  position: absolute;
+  white-space: nowrap;
+  color: yellow;
+  font-size: 24px;
+  animation: moverTexto 20s linear infinite;
+}
+
+@keyframes moverTexto {
+  0% { left: 100%; }
+  50% { left: -200%; }
+  100% { left: 150%; }
+}
+
+#toggleBtn {
+  background: yellow;
+  position: fixed;
+  top: 25px;
+  left: 10px;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.Nom {
+  text-align: center;
+}
+
+.notebox {
+  border: 10px groove #ff8000;
+  margin: auto;
+  background-color: black;
+  width: 50%;
+  text-align: center;
+  color: #ee99dd;
+}
+
+.highlight {
+  background-color: greenyellow;
+}
+
+.cuca {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+.secundario1 {
+  text-align: center;
+  align-content: center;
+  background: #eeffee;
+  opacity: 0.5;
+  border: 3px #f0f4f8;
+  width: 400px;
+  border-radius: 8px;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}

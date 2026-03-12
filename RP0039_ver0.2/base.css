@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    overflow-y: hidden;
+    margin: 0;
+    background: url("Img/Arboles2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: start;
+}
+/* contenedor Principal*/
+.contenedor_Pr {
+    background: cyan;
+    border-radius: 10px;
+    margin: 50px 20px;
+    height: 500px;
+
+    display: grid;
+    grid-template-columns: 450px;
+    grid-template-rows: 40px 100px 1fr;
+}
+
+/* cajas */
+.box {
+    border: 3px blue solid;
+    background:#fff;
+
+    padding: 10px;
+    height: 100%;
+}
+
+/* title */
+#title_bar {
+    background:blue;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+span {
+    justify-self: start; 
+    font-size: 24px;
+    font-style: bold;
+    color:white;
+}
+boton {
+    height: fit-content;
+    
+}
+/* main */
+#main_box {
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
