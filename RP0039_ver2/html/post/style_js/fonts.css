@@ -1,0 +1,14 @@
+@font-face {
+    font-family:Funkturm;
+    src: url(Font/Funkturm.otf);
+}
+@font-face {
+    font-family:Mori;
+    src: url(Font/PPMori-SemiBold.otf);
+    font-weight:700px;
+}
+@font-face {
+    font-family:Mori;
+    src: url(Font/PPMori-Regular.otf);
+    font-weight:300px;
+}

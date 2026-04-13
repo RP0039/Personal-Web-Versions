@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html LANG="ES-US">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RP0039 |Personal Blog</title>
+    <meta charset="UTF-8" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/mode-toggler.css" />
+  <link rel="stylesheet" href="../fonts.css" />
+  <link rel="icon" href="https://files.catbox.moe/6zt15e.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="fondo">
+       <header class="header">
+        <a href="https://rp0039.neocities.org/" class="logo">
+            <h1>HELLO WORLD</h1>
+            rp0039
+        </a>
+        <nav class="nav">
+            <ul>
+                <li>
+                   <a href="https://rp0039.neocities.org/P2" class="menu-link" >
+                      <i class="fa-solid fa-house"></i>
+                      Homepage
+                   </a>
+                </li>
+                <li>
+                   <a href="https://rp0039.neocities.org/html/Blog" class="menu-link" >
+                      <i class="fa-solid fa-address-book"></i>
+                      Blog
+                   </a>
+                </li>
+                <li>
+                   <a href="https://rp0039.neocities.org/html/Updates" class="menu-link" >
+                      <i class="fa-solid fa-hashtag"></i>
+                      Updates
+                   </a>
+                </li>
+                <li>
+                   <label for="toggle" id="label_toggle">
+                       <i class="fa-solid fa-moon"></i>
+                   </label>
+                   <input type="checkbox" id="toggle">
+                </li>
+            </ul>
+                
+        </nav>
+    </header>
+    <main class="home-container"> 
+
+   <div style="margin:0 auto;margin-bottom:15px;" class="titulo">
+        <h1>What’s Next?</h1>
+        <p>Turn the page and find out.</p>
+   </div>
+
+      <section class="main-content" id="updates">
+         <article class="date-box">
+            <a href="./post/13032026.html" id="mini-title">March 13, 2026</a>
+            <P>This Damn Feling.</P>
+         </article>
+         <article class="date-box">
+            <a href="./post/07032026.html" id="mini-title">March 07, 2026</a>
+            <P>The cookies are delicious.</P>
+         </article>
+         <article class="date-box">
+            <a href="post/05032026.html" id="mini-title">March 05, 2026</a>
+            <p style="margin:0;margin-top:15px;">WHAT is... Forgiveness?? </p>
+            <p style="margin:0;margin-top:3px;">A.. nightmare... mm?</P>
+         </article>
+         <article class="date-box">
+            <a href="post/25022026.html" id="mini-title">February 25, 2026</a>
+            <p style="margin:0;margin-top:15px;">My life like Programmer </p>
+            <p style="margin:0;margin-top:3px;">The Past, Present and Future.</P>
+         </article>
+
+      </section>
+    </main>
+</div>
+
+    <script src="../js/app.js"></script>
+
+    <style>
+         body {
+            min-height:100vh;
+            max-height:1500px;
+         }
+      
+         #mini-title {
+            color:inherit;
+            font-size:1.5em;
+            font-family:Funkturm;
+            transition: all 0.5s ease-in-out;
+         }
+         #mini-title:hover {
+            color:rgb(255,34,120)
+         }
+         .date-box {
+            display:flex;
+            flex-direction: column;
+            height:auto;
+            padding:15px;
+            width:230px;
+            border:2px solid;
+            box-shadow:5px 5px 0;
+         }
+         #updates {
+            flex:1;
+            justify-content:center;
+            align-items: center;
+            flex-wrap:wrap;
+            gap:1.2em;
+            padding-bottom:20px;
+            margin-bottom: 25px;
+            border-bottom:1px solid;
+            overflow-y: auto;
+            min-height:300px;
+            max-height:1200px;
+         }
+         @media (max-width:469px) {
+            .titulo h1 {
+               font-size:1.9em;
+            }
+         }
+
+    </style>
+</body>
+</html>

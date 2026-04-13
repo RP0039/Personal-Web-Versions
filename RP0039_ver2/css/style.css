@@ -1,0 +1,148 @@
+body {
+    margin:0 24%;
+    margin-bottom:2em;
+    max-width:1500px;
+    font-family:Mori;
+    line-height:1.15em;
+}
+a {
+    text-decoration: none;
+}
+.home-container {
+    margin-top:2em;
+    display:flex;
+    flex-flow:column;
+    justify-content:center;
+}
+.header {
+    height:15vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid;
+}
+.header a {
+    color:inherit;
+}
+nav ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.5em;
+}
+
+.main-content {
+    margin-top:1em;
+    display:flex;
+    justify-content: center;
+    gap:1.5em;
+}
+.footer {
+    margin-top: 1em;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+}
+.footer a {
+    color:inherit;
+    padding:10px 20px;
+    border-radius:5px;
+    border:2px solid;
+}
+h1 {
+    font-family:Funkturm;
+    font-size:2.5em;
+    margin:.67em 0;
+    margin-bottom:.30em;
+    text-wrap:nowrap;
+}
+ h2 {
+    font-family:Funkturm;
+    text-wrap:nowrap;
+    font-size:1.5em;
+}
+
+
+@media (max-width:468px){
+    .header {
+        flex-direction:column;
+        height:auto;
+        gap:1em
+    }
+    .logo {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    }
+}
+@media (max-width:468px) {
+    .nav ul {
+        flex-direction: row;
+        padding-bottom:10px;
+    }
+}
+@media screen and (max-width:468px),(min-width:469px) and (max-width:1080px) {
+  body {
+    margin:0 10%;
+    padding-bottom:2em
+  }
+}
+@media screen and (max-width:768px),(min-width:768px) and (max-width:1080px) {
+    .home-container .main-content {
+        justify-content: flex-start;
+        flex-wrap:wrap;
+        gap:0;
+    }
+}
+@media screen and (max-width:768px),(min-width:768px) and (max-width:1080px) {
+    .home-container .text {
+        max-width:100%;
+    }
+}
+.text h2, .text p{margin-block:1lh;}
+
+/*   -----   estampas   -----   */
+.stamp-box {
+    border:2px solid;
+    box-shadow: 10px 10px 0 rgb(55,34,209);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    overflow-y: scroll;
+    padding:20px 0 10px 0;
+    gap:0.5em;
+    height:200px;
+}
+/*   ----- scroll bar -----   */
+* {
+    scrollbar-color:rgb(224,200,150) #333;
+}
+
+/*   -----  atabook  -----   */
+.guestbook {
+    color:inherit;
+    font-weight:bold;
+    height:40px;
+    width:160px;
+    border:3px solid;
+    border-radius:8px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .8s ease;
+}
+.guestbook:hover {
+    scale: 1.05;
+
+
+}
+.text.atabook{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+}
